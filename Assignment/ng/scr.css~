@@ -1,0 +1,10 @@
+ul.side1 { 
+     width: 160px;
+    display: block;
+    white-space: nowrap;
+     overflow: auto;   
+     }
+li { 
+     width: 80px;
+     display: inline-block;
+     }

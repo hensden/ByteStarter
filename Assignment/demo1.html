@@ -16,18 +16,20 @@
 </head>
 <body>
 <div id="app">
+<div id = "sublayer">
     <div id="mainframe">
         <div class = "container">
             
             <div class="row" id="top-bar">
-                <div class="col-sm-7 bg-info" id="tb-c1">
-                    <div id="query">
-                        <em>Search Startups, Incubators, Accelerators etc</em>
-                    </div>
-                </div>
+                
                 <div class="col-sm-1" id="tb-c2">
                     <div id="menu">
                         <img src="src/menu.png" id="menu-img" alt="M">
+                    </div>
+                </div>
+                <div class="col-sm-7 bg-info" id="tb-c1">
+                    <div id="query">
+                        <em>Search Startups, Incubators, Accelerators etc</em>
                     </div>
                 </div>
             </div>  
@@ -70,31 +72,105 @@
                             <div ng-include="currentTab"></div>
                         </div>
                     </div>
+
                     <script type="text/ng-template" id="Trending.tpl.html">
-                        <div id="viewOne">
-                            <p>Praesent id metus massa, ut blandit odio. Proin quis tortor  orci. Etiam at risus et justo dignissim congue. Donec congue lacinia dui, a porttitor lectus condimentum laoreet. Nunc.</p>
-                        </div>
+                    
+	                    <div class="feedheader">
+	                    	<h3> Incubators</h3>
+	                    </div>
+	                    <div id="viewOne">
+	                    	<div id="scroll">
+	                    		<p>
+	                    		<a href="http://www.forbes.com/sites/gordonkelly/2016/05/30/iphone-7-32gb-storage-option/#546902f27a47">
+	                    		<img src="src/trend2.png" />
+	                    		</a>
+	                    		<a href="https://flipboard.com/redirect?url=http%3A%2F%2Fwww.bbc.co.uk%2Fnews%2Fbusiness-36415462&v=bZ_Q6j6e19pYUyae5z6ieMi_MUklbJNs3ZB63i9pxXIAAAFVBxm__Q">
+	                    		<img src="src/trend3.png" />
+	                    		</a> 
+	                    		</p>
+	                    	</div>
+	                    </div>
+
+	                    <div class="feedheader">
+	                    	<h3> Accelerators</h3>
+	                    </div>
+	                        <div id="viewOne">
+	                        	<div id="scroll">
+	                        		<p>
+	                        		<img src="src/chbook.jpg" />
+	                        		<img src="src/uber.jpg" />
+	                        		</p>
+	                        	</div>
+	                        </div>
                     </script>
                     
                     <script type="text/ng-template" id="Popular.tpl.html">
-                        <div id="viewTwo">
-                            <p>Curabitur vulputate, ligula lacinia scelerisque tempor, lacus lacus ornare ante, ac egestas est urna sit amet arcu. Class aptent taciti sociosqu.</p>
-                        </div>
+                       <div class="feedheader">
+	                    	<h3> Incubators</h3>
+	                    </div>
+	                    <div id="viewTwo">
+	                    	<div id="scroll">
+	                    		<p>
+
+	                    		<img src="src/pop1.png" />
+	                    		<img src="src/pop2.png" />
+	                    		 
+	                    		</p>
+	                    	</div>
+	                    </div>
+
+	                    <div class="feedheader">
+	                    	<h3> Accelerators</h3>
+	                    </div>
+	                        <div id="viewTwo">
+	                        	<div id="scroll">
+	                        		<p>
+
+	                        		<img src="src/pop3.png" />
+	                        		<img src="src/pop4.png" />
+	                        		 
+	                        		</p>
+	                        	</div>
+	                        </div>
                     </script>
                     
                     <script type="text/ng-template" id="Newest.tpl.html">
-                        <div id="viewThree">
-                            <p>In pellentesque faucibus vestibulum. Nulla at nulla justo, eget luctus tortor. Nulla facilisi. Duis aliquet egestas purus in blandit. Curabitur vulputate, ligula lacinia scelerisque tempor, lacus lacus ornare ante, ac egestas est urna sit amet arcu. Class aptent taciti sociosqu.</p>
-                        </div>
+                        <div class="feedheader">
+	                    	<h3> Incubators</h3>
+	                    </div>
+	                    <div id="viewThree">
+	                    	<div id="scroll">
+	                    		<p>
+
+	                    		<img src="src/reddit.jpg" />
+	                    		<img src="src/uber.jpg" />
+	                    		 
+	                    		</p>
+	                    	</div>
+	                    </div>
+
+	                    <div class="feedheader">
+	                    	<h3> Accelerators</h3>
+	                    </div>
+	                        <div id="viewThree">
+	                        	<div id="scroll">
+	                        		<p>
+
+	                        		<img src="src/reddit.jpg" />
+	                        		<img src="src/uber.jpg" />
+	                        		 
+	                        		</p>
+	                        	</div>
+	                        </div>
                     </script>
                 </div>
 
             </div>
     </div>
 
-
+<img src="scr/add.jpg" id="fixedbutton" height="20px" width="20px" />
 </div>
-
+</div>
 
     </body>
 </html>

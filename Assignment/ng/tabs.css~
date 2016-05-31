@@ -22,13 +22,4 @@ li {
     color: #000;
 }
 
-ul#side1 { 
-     width: 160px;
-    display: block;
-    white-space: nowrap;
-     overflow: auto;   
-     }
-li.sub1 { 
-     width: 80px;
-     display: inline-block;
-     }
+

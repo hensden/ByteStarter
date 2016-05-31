@@ -2,17 +2,27 @@
     margin-left: 29.6%;
     margin-right: 30.1%;
     margin-top: 49px;
-    background-color: #FFF;
+    background-color: #EEF;
     border-style: solid;
     width: 40.7%; 
+    height: 900px;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    max-width: 100%;
     padding: 0px 0px 0px 0px;
+}
+
+#sublayer{
+    overflow: hidden;
 }
 
 #mainframe #mainframe2{
     background-color: #ededed;
     margin-top: 50px;
 }
-
+#container2{
+    margin: 0px 0px 0px 0px;
+}
 #top-bar{
     width: 105%;
     height: 52px;
@@ -28,7 +38,7 @@
 }
 
 #tb-c1:hover{
-    background-color: #dedede;
+    background-color: #99dede;
 }
 
 #tb-c2{
@@ -85,7 +95,37 @@
     background:transparent url(video.png) no-repeat 50% 50%;
 }
 
+#scroll{
+    width:auto;
+    height:auto;
+    margin: 10px auto;
+    white-space:nowrap;
+    }
 
+.feedheader{
+    background-color: #79c879;
+    color: white;
+    padding-left: 1%;
+    margin: 0px 0px 0px 0px;
+}
+
+#viewOne{
+    overflow: scroll;
+    width: 100%;
+    height: auto;
+}
+
+#viewTwo{
+    overflow: scroll;
+    width: 100%;
+    height: auto;
+}
+
+#viewThree{
+    overflow: scroll;
+    width: 100%;
+    height: auto;
+}
 #slider .mc-caption {
     position:absolute;
     width:100%;
@@ -138,3 +178,9 @@
 
 #slider>a, #slider video, #slider audio {display:none;}
 #slider div {-webkit-transform: translate3d(0,0,0);transform: translate3d(0,0,0);}
+
+#fdixedbutton{
+    position: fixed;
+    bottom: 0px;
+    right: 0px;
+}
