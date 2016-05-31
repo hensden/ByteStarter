@@ -18,23 +18,50 @@
 <div id="app">
 <div id = "sublayer">
     <div id="mainframe">
+		<div id="options">
+		<div id="mySidenav" class="sidenav">
+		  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+		  <a href="#"><img src="src/pic.jpg" height="75px" width="75px" /></a>
+		  <a href="#">Account</a>
+		  <a href="#">Portfolio</a>
+		  <a href="#">Services</a>
+		  <a href="#">Clients</a>
+		  <a href="#">Blog</a>
+		  <a href="#">Contact</a>
+		</div>
+		</div>
+
         <div class = "container">
             
             <div class="row" id="top-bar">
                 
                 <div class="col-sm-1" id="tb-c2">
                     <div id="menu">
+                    <span onclick="openNav()">
                         <img src="src/menu.png" id="menu-img" alt="M">
+                    </span>
                     </div>
                 </div>
                 <div class="col-sm-7 bg-info" id="tb-c1">
                     <div id="query">
-                        <em>Search Startups, Incubators, Accelerators etc</em>
+                    	<div class="field" id="searchform">
+						  	<input type="text" id="searchquery" placeholder="Search startups, incubators, acceleratos etc" />
+						  	&nbsp;
+						  	<button type="reset" class="btn btn-info" value="Reset" onclick="clearField();"><strong>X</strong></button>
+						  	&nbsp; 
+						    <button type="button" id="search" class="btn btn-primary">Go</button>
+						</div>
                     </div>
                 </div>
             </div>  
         </div>
     </div>
+
+    <script type="text/javascript">
+    	function clearField(){
+    		document.getElementById("searchquery").value = "";
+    	}
+    </script>
 
     <div id="feed">
     <div id="sliderFrame">
@@ -171,6 +198,14 @@
 <img src="scr/add.jpg" id="fixedbutton" height="20px" width="20px" />
 </div>
 </div>
+<script>
+function openNav() {
+    document.getElementById("mySidenav").style.width = "150px";
+}
 
+function closeNav() {
+    document.getElementById("mySidenav").style.width = "0";
+}
+</script>
     </body>
 </html>
